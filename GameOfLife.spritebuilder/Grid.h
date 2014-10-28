@@ -10,7 +10,7 @@
 
 @interface Grid : CCSprite
 
-@property (nonatomic, assign) int totalAllive;
+@property (nonatomic, assign) int totalAlive;
 @property (nonatomic, assign) int generation;
 
 @end
