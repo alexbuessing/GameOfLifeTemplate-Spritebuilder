@@ -34,6 +34,11 @@
 
 -(void)pause
 {
+    [self unschedule:@selector(step)];
+}
+
+-(void)step
+{
     //this method will get called every half second when you hit the play button and will stop getting called when you hit the pause button
     [_grid evolveStep];
     _generationLabel.string = [NSString stringWithFormat:@"%d", _grid.generation];
