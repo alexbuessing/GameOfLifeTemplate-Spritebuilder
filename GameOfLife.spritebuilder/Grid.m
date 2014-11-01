@@ -194,8 +194,9 @@ float _cellHeight;
                             currentCreature.isAlive = FALSE;
                         }
                     }
-                    numAlive += 1;
                 }
+                numAlive += 1;
+                
             }
         }
     }
