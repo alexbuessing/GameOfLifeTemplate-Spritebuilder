@@ -153,6 +153,9 @@ float _cellHeight;
 
 -(void)updateCreatures
 {
+    
+    int numAlive = 0;
+    
     //iterate through the rows
     //note that NSArray has a method 'count' that will return the number of elements in the array
     for (int i = 0; i < [_gridArray count]; i++)
@@ -191,10 +194,12 @@ float _cellHeight;
                             currentCreature.isAlive = FALSE;
                         }
                     }
+                    numAlive += 1;
                 }
             }
         }
     }
+    _totalAlive = numAlive;
 }
 
 @end
